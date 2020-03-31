@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/border_style">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:src="@drawable/bangladesh_flag"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_margin="8dp"
+                android:text="Bangladesh"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" ></LinearLayout>
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                android:text="0"
+                android:gravity="center"
+                android:textSize="56sp"
+                android:background="@color/gray"
+                android:textColor="@color/green"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="4dp"
+                android:text="Runs Total"
+                android:gravity="center"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/teamA_sixPoints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Six Runs"
+                android:onClick="addSixForBangladesh"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginBottom="8dp"
+                />
+
+            <Button
+                android:id="@+id/teamA_fourPoints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Four Runs"
+                android:onClick="addFourForBangladesh"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginBottom="4dp"
+                />
+
+
+            <TextView
+                android:id="@+id/bangladesh_wicket"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                android:text="0"
+                android:gravity="center"
+                android:textSize="56sp"
+                android:background="@color/gray"
+                android:textColor="@color/red"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Outs"
+                android:gravity="center"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/teamA_freeThrows"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wicket Taken"
+                android:onClick="addOneWicketBangladesh"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginBottom="12dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/border_style">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:src="@drawable/english_flag"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_margin="8dp"
+                android:text="England"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                android:text="0"
+                android:gravity="center"
+                android:textSize="56sp"
+                android:background="@color/gray"
+                android:textColor="@color/green"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="4dp"
+                android:text="Runs Total"
+                android:gravity="center"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/teamB_sixPoints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Six Runs"
+                android:onClick="addSixForEngland"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginBottom="8dp"
+                />
+
+            <Button
+                android:id="@+id/teamB_fourPoints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Four Runs"
+                android:onClick="addFourForEngland"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginBottom="4dp"
+                />
+
+
+            <TextView
+                android:id="@+id/england_wicket"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                android:text="0"
+                android:gravity="center"
+                android:textSize="56sp"
+                android:background="@color/gray"
+                android:textColor="@color/red"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Outs"
+                android:gravity="center"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/teamB_freeThrows"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wicket Taken"
+                android:onClick="addOneWicketEngland"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginBottom="12dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset scores"
+        android:onClick="resetScore"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        />
+
+</RelativeLayout>
